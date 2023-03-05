@@ -1,0 +1,45 @@
+# Visual Studio files
+.vs/
+bin/
+obj/
+Debug/
+Release/
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*~.~*
+*.log
+*.zip
+*.gz
+*.rar
+*.7z
+
+# ReSharper files
+_ReSharper*/
+
+# NuGet Packages
+packages/
+
+# TeamCity files
+_TeamCity*
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Bb]in/
+[Oo]bj/
+
+# macOS system files that should be ignored
+.DS_Store
