@@ -1,9 +1,14 @@
 ﻿namespace ApplicationCore;
 
-public record Cell(int X, int Y, bool IsAlive)
+public struct Cell
 {
-    public Cell(int x, int y) : this(x, y, false) { }
+    public int X { get; }
+    public int Y { get; }
+    public bool IsAlive { get; private set; }
 
-    public Cell SetAlive() => this with { IsAlive = true };
-    public Cell SetDead() => this with { IsAlive = false };
+    public Cell((int x, int y) point, bool isAlive)
+    {
+        (X, Y) = point;
+        IsAlive = isAlive;
+    }
 }

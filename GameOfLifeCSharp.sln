@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationCore", "src\Appl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleGameOfLifeApp", "src\ConsoleGameOfLifeApp\ConsoleGameOfLifeApp.csproj", "{69E6B9D6-6AEC-4EF9-BD57-08C69FB377CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "src\UnitTests\UnitTests.csproj", "{D36F1821-2DF9-4019-B3C5-D40AF9154257}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{69E6B9D6-6AEC-4EF9-BD57-08C69FB377CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69E6B9D6-6AEC-4EF9-BD57-08C69FB377CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69E6B9D6-6AEC-4EF9-BD57-08C69FB377CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D36F1821-2DF9-4019-B3C5-D40AF9154257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D36F1821-2DF9-4019-B3C5-D40AF9154257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D36F1821-2DF9-4019-B3C5-D40AF9154257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36F1821-2DF9-4019-B3C5-D40AF9154257}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

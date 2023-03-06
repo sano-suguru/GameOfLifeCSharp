@@ -1,11 +1,11 @@
 ﻿using ApplicationCore;
 using ConsoleGameOfLifeApp;
 
-World world = new(width: 30, height: 30, new ConsoleRenderer());
+GameOfLife game = new(width: 30, height: 30, new ConsoleRenderer());
 
 while (true)
 {
-    world.Render();
-    world.NextGeneration();
+    game.Render();
+    game.AdvanceGeneration();
     await Task.Delay(1000);
 }

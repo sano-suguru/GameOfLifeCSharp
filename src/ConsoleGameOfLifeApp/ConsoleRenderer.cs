@@ -8,9 +8,9 @@ public class ConsoleRenderer : RendererBase
     {
         Console.Clear();
 
-        for (int y = 0; y < cells.GetLength(1); y++)
+        for (int y = 0; y < cells.GetLength(dimension: 1); y++)
         {
-            for (int x = 0; x < cells.GetLength(0); x++)
+            for (int x = 0; x < cells.GetLength(dimension: 0); x++)
             {
                 if (cells[x, y].IsAlive)
                 {
