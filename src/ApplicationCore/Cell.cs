@@ -1,14 +1,14 @@
 ﻿namespace ApplicationCore;
 
-public struct Cell
+public readonly struct Cell
 {
     public int X { get; }
     public int Y { get; }
     public bool IsAlive { get; }
 
-    public Cell((int x, int y) point, bool isAlive)
+    public Cell(int x, int y, bool isAlive)
     {
-        (X, Y) = point;
+        (X, Y) = (x, y);
         IsAlive = isAlive;
     }
 }

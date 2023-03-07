@@ -32,7 +32,7 @@ public class GameOfLife
             {
                 bool isAlive = random.Next(0, 2) == 1;
 
-                _grid[x, y] = new Cell((x, y), isAlive);
+                _grid[x, y] = new Cell(x, y, isAlive);
             }
         }
 
@@ -66,7 +66,7 @@ public class GameOfLife
                     }
                 }
 
-                nextGeneration[i, j] = new Cell((x: i, y: j), nextCellState);
+                nextGeneration[i, j] = new Cell(x: i, y: j, nextCellState);
             }
         }
 

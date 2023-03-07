@@ -11,9 +11,9 @@ public class NeighborCounterTests
         // Arrange
         var grid = new Cell[,]
         {
-            { new Cell((x: 0, y: 0), isAlive: false), new Cell((x: 1, y: 0), isAlive: false), new Cell((x: 2, y: 0), isAlive: false) },
-            { new Cell((x: 0, y: 1), isAlive: false), new Cell((x: 1, y: 1), isAlive: false), new Cell((x: 2, y: 1), isAlive: false) },
-            { new Cell((x: 0, y: 2), isAlive: false), new Cell((x: 1, y: 2), isAlive: false), new Cell((x: 2, y: 2), isAlive: false) },
+            { new Cell(x: 0, y: 0, isAlive: false), new Cell(x: 1, y: 0, isAlive: false), new Cell(x: 2, y: 0, isAlive: false) },
+            { new Cell(x: 0, y: 1, isAlive: false), new Cell(x: 1, y: 1, isAlive: false), new Cell(x: 2, y: 1, isAlive: false) },
+            { new Cell(x: 0, y: 2, isAlive: false), new Cell(x: 1, y: 2, isAlive: false), new Cell(x: 2, y: 2, isAlive: false) },
         };
         var counter = new NeighborCounter(grid);
 
@@ -30,9 +30,9 @@ public class NeighborCounterTests
         // Arrange
         var grid = new Cell[,]
         {
-            { new Cell((x: 0, y: 0), isAlive: true), new Cell((x: 1, y: 0), isAlive: false), new Cell((x: 2, y: 0), isAlive: false) },
-            { new Cell((x: 0, y: 1), isAlive: false), new Cell((x: 1, y: 1), isAlive: true), new Cell((x: 2, y: 1), isAlive: true) },
-            { new Cell((x: 0, y: 2), isAlive: false), new Cell((x: 1, y: 2), isAlive: false), new Cell((x: 2, y: 2), isAlive: false) },
+            { new Cell(x: 0, y: 0, isAlive: true), new Cell(x: 1, y: 0, isAlive: false), new Cell(x: 2, y: 0, isAlive: false) },
+            { new Cell(x: 0, y: 1, isAlive: false), new Cell(x: 1, y: 1, isAlive: true), new Cell(x: 2, y: 1, isAlive: true) },
+            { new Cell(x: 0, y: 2, isAlive: false), new Cell(x: 1, y: 2, isAlive: false), new Cell(x: 2, y: 2, isAlive: false) },
         };
         var counter = new NeighborCounter(grid);
 
@@ -49,9 +49,9 @@ public class NeighborCounterTests
         // Arrange
         var grid = new Cell[,]
         {
-            { new Cell((x: 0, y: 0), isAlive: true), new Cell((x: 1, y: 0), isAlive: false), new Cell((x: 2, y: 0), isAlive: false) },
-            { new Cell((x: 0, y: 1), isAlive: false), new Cell((x: 1, y: 1), isAlive: true), new Cell((x: 2, y: 1), isAlive: false) },
-            { new Cell((x: 0, y: 2), isAlive: false), new Cell((x: 1, y: 2), isAlive: false), new Cell((x: 2, y: 2), isAlive: false) },
+            { new Cell(x: 0, y: 0, isAlive: true), new Cell(x: 1, y: 0, isAlive: false), new Cell(x: 2, y: 0, isAlive: false) },
+            { new Cell(x: 0, y: 1, isAlive: false), new Cell(x: 1, y: 1, isAlive: true), new Cell(x: 2, y: 1, isAlive: false) },
+            { new Cell(x: 0, y: 2, isAlive: false), new Cell(x: 1, y: 2, isAlive: false), new Cell(x: 2, y: 2, isAlive: false) },
         };
         var counter = new NeighborCounter(grid);
 

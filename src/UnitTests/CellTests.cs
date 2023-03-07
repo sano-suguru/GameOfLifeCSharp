@@ -9,15 +9,16 @@ public class CellTests
     public void Constructor_WithValidParameters_SetsProperties()
     {
         // Arrange
-        var point = (2, 3);
+        int x = 1;
+        int y = 2;
         var isAlive = true;
 
         // Act
-        var cell = new Cell(point, isAlive);
+        Cell cell = new(x, y, isAlive);
 
         // Assert
-        Assert.Equal(point.Item1, cell.X);
-        Assert.Equal(point.Item2, cell.Y);
+        Assert.Equal(x, cell.X);
+        Assert.Equal(y, cell.Y);
         Assert.Equal(isAlive, cell.IsAlive);
     }
 }

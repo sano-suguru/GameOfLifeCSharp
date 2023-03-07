@@ -11,9 +11,9 @@ public class GameOfLifeTests
         // Arrange
         Cell[,] initialState = new Cell[3, 3]
         {
-            { new Cell((0,0), true), new Cell((1,0), true), new Cell((2,0), false) },
-            { new Cell((0,1), true), new Cell((1,1), false), new Cell((2,1), false) },
-            { new Cell((0,2), false), new Cell((1,2), false), new Cell((2,2), false) }
+            { new Cell(0,0, true), new Cell(1,0, true), new Cell(2,0, false) },
+            { new Cell(0,1, true), new Cell(1,1, false), new Cell(2,1, false) },
+            { new Cell(0,2, false), new Cell(1,2, false), new Cell(2,2, false) }
         };
         MockRenderer renderer = new MockRenderer(grid =>
         {
@@ -34,10 +34,10 @@ public class GameOfLifeTests
         // Arrange
         Cell[,] initialState = new Cell[4, 4]
         {
-            { new Cell((0,0), false), new Cell((1,0), false), new Cell((2,0), false), new Cell((3, 0), false) },
-            { new Cell((0,1), false), new Cell((1,1), true), new Cell((2,1), true), new Cell((3, 0), false) },
-            { new Cell((0,2), false), new Cell((1,2), true), new Cell((2,2), true), new Cell((3, 0), false) },
-            { new Cell((0,2), false), new Cell((1,2), false), new Cell((2,2), false), new Cell((3, 0), false) },
+            { new Cell(0,0, false), new Cell(1,0, false), new Cell(2,0, false), new Cell(3, 0, false) },
+            { new Cell(0,1, false), new Cell(1,1, true), new Cell(2,1, true), new Cell(3, 0, false) },
+            { new Cell(0,2, false), new Cell(1,2, true), new Cell(2,2, true), new Cell(3, 0, false) },
+            { new Cell(0,2, false), new Cell(1,2, false), new Cell(2,2, false), new Cell(3, 0, false) },
         };
         MockRenderer renderer = new MockRenderer(grid =>
         {
@@ -58,9 +58,9 @@ public class GameOfLifeTests
         // Arrange
         Cell[,] initialState = new Cell[3, 3]
         {
-            { new Cell((0,0), false), new Cell((1,0), false), new Cell((2,0), false) },
-            { new Cell((0,1), false), new Cell((1,1), true), new Cell((2,1), true) },
-            { new Cell((0,2), false), new Cell((1,2), false), new Cell((2,2), false) }
+            { new Cell(0,0, false), new Cell(1,0, false), new Cell(2,0, false) },
+            { new Cell(0,1, false), new Cell(1,1, true), new Cell(2,1, true) },
+            { new Cell(0,2, false), new Cell(1,2, false), new Cell(2,2, false) }
         };
         MockRenderer renderer = new MockRenderer(grid =>
         {
@@ -81,13 +81,13 @@ public class GameOfLifeTests
         // Arrange
         var initialState = new Cell[,]
         {
-            { new Cell((0, 0), true), new Cell((1, 0), true), new Cell((2, 0), true) },
-            { new Cell((0, 1), true), new Cell((1, 1), true), new Cell((2, 1), false) },
-            { new Cell((0, 2), false), new Cell((1, 2), false), new Cell((2, 2), false) }
+            { new Cell(0, 0, true), new Cell(1, 0, true), new Cell(2, 0, true) },
+            { new Cell(0, 1, true), new Cell(1, 1, true), new Cell(2, 1, false) },
+            { new Cell(0, 2, false), new Cell(1, 2, false), new Cell(2, 2, false) }
         };
         var renderer = new MockRenderer(grid =>
         {
-            Assert.False(grid[1,1].IsAlive);
+            Assert.False(grid[1, 1].IsAlive);
         });
         var game = new GameOfLife(initialState, renderer);
 
